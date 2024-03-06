@@ -1,0 +1,56 @@
+
+
+{% extends 'dummy.html' %}
+
+{% block title %}
+<title>Subscribe</title>
+{% endblock %}
+
+{% block body_block %}
+<style>
+    .card
+    {
+        background-color: rgb(0, 0, 0);
+    }
+    .card-body
+    {
+      color: yellow;
+    }
+    h5{
+      color: white;
+      
+    }
+    p{
+      color: white;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+          <center><h1 style="color: white;"><b>Subscriptions</b></h1></center>
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Premium</h5>
+          <h5 class="card-title">For all Contents</h5>
+          <h5 class="card-title">INR. 999</h5>
+          <a href="#!" class="btn btn-primary">Subscribe</a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Suprime</h5>
+          <h5 class="card-title">Only For Shows,Indian-Idols</h5>
+          <h5 class="card-title">INR. 699</h5>
+          <a href="#!" class="btn btn-primary">Subscribe</a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Plus</h5>
+          <h5 class="card-title">Only for Kids Contents</h5>
+          <h5 class="card-title">INR. 499</h5>
+          <a href="#!" class="btn btn-primary">Subscribe</a>
+        </div>
+      </div>
+    
+</body>
+
+{% endblock %}

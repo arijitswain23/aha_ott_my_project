@@ -1,0 +1,149 @@
+
+
+{% block title %}
+<title>Login</title>
+{% endblock %}
+
+{% block body_block %}
+	<script src="https://kit.fontawesome.com/e681d559bc.js" crossorigin="anonymous"></script>
+	<style>
+        *
+        {
+            margin: 0px;
+        }
+		.form
+		{
+			width: 500px;
+			height: 500px;			
+			margin-left: 100px;
+            margin-top: 70px;
+			border-radius: 10px;
+			padding: 25px;
+		
+
+		}
+		.form:hover
+		{
+			
+			cursor: pointer;
+			
+		}
+		body
+		{
+			background-image: url("https://www.imageshine.in/uploads/gallery/Free-vector-watercolor-background-Wallpaper.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		input
+		{
+			width: 240px;
+			height: 35px;
+			background: transparent;
+			border-top: none;
+			border-right: none;
+			border-left:none;
+			border-bottom: 1px solid gray;
+			color: white;
+			font-size: 15px;
+			border-radius: 5px;
+			letter-spacing: 1px;
+			margin-top: 30px;
+			font-family: sans-serif;
+		}
+		.btn
+		{
+			width: 240px;
+			height: 40px;
+			background: rgb(79, 239, 79);
+			border-radius:10px ;
+			text-align: center;
+			cursor: pointer;
+			font-size: 32px;
+			font-weight: bolder;
+			border: none;
+		}
+		.btn:hover
+		{
+			border-radius: 100px;
+			background-color: rgb(243, 171, 37);
+			box-shadow:0 0 5px 5px #888888;
+
+		}
+		a
+		{
+			text-decoration: none;
+			color: white;
+		}
+		.lii
+		{
+			padding-top: 15px;
+			padding-bottom: 10px;
+			text-align: center;
+			margin-top: 5px;
+		}
+		.lion>a
+		{
+			justify-content: center;
+			padding: 20px;
+		}
+		.lion>a:hover
+		{
+			color:rgb(185, 255, 23);
+			width: 150px;
+			height: 100px;
+		}
+        .pp
+        {
+            color: rgba(73, 218, 20, 0.779);
+        }
+        img
+        {
+            width: 100px;
+            height: 100px;
+            margin-left: 60px;
+            margin-top: -10px;
+            border-radius: 100%;
+        }
+        .link
+        {
+            color: rgb(165, 229, 229);
+        }
+        .ll
+        {
+            border: none;
+            
+        }
+        
+	</style>
+</head>
+<body>
+		<div class="content">
+			<div class="form">
+                <img src="https://www.centrik.in/wp-content/uploads/2017/02/user-image-.png">
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type="text" name="un" id="un" placeholder="Username">
+                    <br>
+                    <input type="password" id="pw" name="pw" placeholder="Password">
+					<br>
+					<br>
+                    <button class="btn btn-primary">Login<input type="submit" value="" style="color:red ;" class="ll"></button><br><br>
+                </form>
+				<a href="{% url 'reset_password' %}" class="nav-link" style="color: red;">Forgot password</a><br><br>
+				<a href="{% url 'registration' %}">Sign up here with</a><br><br>
+                <p class="pp">By continuing, you agree to Aha's Conditions of Use and Privacy Notice</p><br><br>
+				<div class="lion">
+					<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/?lang=en-in"><i class="fa-brands fa-square-twitter"></i></a>
+					<a href="https://www.google.com/"><i class="fa-brands fa-google"></i></a>
+					<a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-square-instagram"></i></a>
+					<a href="https://www.youtube.com/embed/wbkfuO0havc"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+{% endblock %} 
+
