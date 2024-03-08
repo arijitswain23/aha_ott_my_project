@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aha</title>
-    <link rel="shortcut icon" href="https://image.emojisky.com/998/10277998-middle.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://blog.aha.video/wp-content/uploads/2021/07/aha_logo.png" type="image/x-icon">
      <!-- Font Awesome -->
    <script src="https://kit.fontawesome.com/e681d559bc.js" crossorigin="anonymous"></script>
    <link
@@ -45,7 +45,7 @@
        }
        .btn
     {
-        margin-left: 800px;
+        margin-left: 780px;
         background-color: rgb(255, 166, 0);
         border-radius: 50px;
         height: 50px;
@@ -170,40 +170,63 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <img src="https://res.cloudinary.com/dbxe3v9mq/image/upload/v1685462022/5ec39ea2f4130d44176268c0_1589878434760-removebg-preview_rf6gj5.png" width="100px" height="50px">
+          <img src="https://blog.aha.video/wp-content/uploads/2021/07/aha_logo.png" width="80px" height="40px">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#" style="color:aliceblue">Home</a>
+              <a href="{% url 'login_form' %}" class="nav-link">Home</a>
 
-              <a class="nav-link" href="#" style="color:aliceblue">Movies</a>
-              <a class="nav-link disabled" style="color:aliceblue">Shows</a>
-              <a class="nav-link disabled" style="color:aliceblue">Indian_idols</a>
-              <a class="nav-link disabled" style="color:aliceblue" class="btn btn-info">Kids</a>
+              <a href="{% url 'login_form' %}" class="nav-link">Movies</a>
+              <a href="{% url 'login_form' %}" class="nav-link">Indian_idols</a>
+              <a href="{% url 'login_form' %}" class="nav-link">Kids</a>
 
-              <a class="nav-link disabled" style="color:aliceblue">My_aha</a>
+              <a href="{% url 'login_form' %}" class="nav-link">Login</a>
               <a href="{% url 'subscribe' %}"><button class="btn btn-primary" class="btn">Subscription</button></a>
       </nav>
-    <div class="div_aha">
-        <div class="con">
-    
-        <h1>WATCH 100% CONTENT IN</h1>
-        <img src="https://res.cloudinary.com/dbxe3v9mq/image/upload/v1685462022/5ec39ea2f4130d44176268c0_1589878434760-removebg-preview_rf6gj5.png" width="100px" height="50px">Telugu
-        <img src="https://res.cloudinary.com/dbxe3v9mq/image/upload/v1685603852/lang-sel-screen-cast-te_ezvbpd.png" class="imgg">
+
+      <h1>Top 10</h1>
+      <a href="{% url 'login_form' %}"><div class="container-fluied">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                <img src="https://image-resizer-cloud-api.akamaized.net/image/933A26D7-314E-4FD8-83BC-17CCD074C265/0-9x16.jpg?width=336" class="img" width="250px">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                <img src="https://image-resizer-cloud-api.akamaized.net/image/56FEEDB4-250A-4718-B3BF-F04E204BEBE6/0-9x16.jpg?width=336" class="img" width="250px">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                <img src="https://image-resizer-cloud-api.akamaized.net/image/C6173B91-AE67-4DF1-BB7D-E4C8FEAD143C/0-9x16.jpg?width=336" class="img" width="250px">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                <img src="https://image-resizer-cloud-api.akamaized.net/image/B80406E2-685C-41C6-96C0-D6EC657308AE/0-9x16.jpg?width=336" class="img" width="250px">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                <img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-9x16.jpg?width=336" class="img" width="250px">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                <img src="https://image-resizer-cloud-api.akamaized.net/image/647A1DB5-389C-4401-A31E-BAD252A93117/0-9x16.jpg?width=336" class="img" width="250px">
+            </div>
         </div>
-        <br>
-        <div class="conn">
+      </div> <br>
+      <div class="div_aha">
+        <div class="con">
+      
           <h1>WATCH 100% CONTENT IN</h1>
-          <img src="https://res.cloudinary.com/dbxe3v9mq/image/upload/v1685462022/5ec39ea2f4130d44176268c0_1589878434760-removebg-preview_rf6gj5.png" width="100px" height="50px">Tamil
-          <img src="https://image-resizer-cloud-cdn.api.aha.firstlight.ai/image/static-asset/lang-sel-screen-cast-ta.png?width=143" class="imgg">
+          <img src="https://blog.aha.video/wp-content/uploads/2021/07/aha_logo.png" width="70px" height="30px">Telugu
+          <img src="https://res.cloudinary.com/dbxe3v9mq/image/upload/v1685603852/lang-sel-screen-cast-te_ezvbpd.png" class="imgg">
           </div>
-      </div>
-      <div align="right">
+          <br>
+          <div class="conn">
+            <h1>WATCH 100% CONTENT IN</h1>
+            <img src="https://blog.aha.video/wp-content/uploads/2021/07/aha_logo.png" width="70px" height="30px">Tamil
+            <img src="https://image-resizer-cloud-cdn.api.aha.firstlight.ai/image/static-asset/lang-sel-screen-cast-ta.png?width=143" class="imgg">
+            </div>
+        </div></a>
+      <div align="center">
         <input type="checkbox" name="i">Telugu
         <br>
-        <input type="checkbox" name="i">English
+        <input type="checkbox" name="i">Tamil
       </div>
     </div>
       

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>home</title>
-  <link rel="shortcut icon" href="https://image.emojisky.com/998/10277998-middle.png" type="image/x-icon"><!-- Font Awesome -->
+  <link rel="shortcut icon" href="https://blog.aha.video/wp-content/uploads/2021/07/aha_logo.png" type="image/x-icon"><!-- Font Awesome -->
    <!-- Font Awesome -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -41,7 +41,7 @@
     }
     .btn
     {
-        margin-left: 680px;
+        margin-left: 620px;
         background-color: rgb(255, 166, 0);
         border-radius: 50px;
         height: 50px;
@@ -110,7 +110,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <img src="https://res.cloudinary.com/dbxe3v9mq/image/upload/v1685462022/5ec39ea2f4130d44176268c0_1589878434760-removebg-preview_rf6gj5.png" width="100px" height="50px">
+          <img src="https://blog.aha.video/wp-content/uploads/2021/07/aha_logo.png" width="80px" height="40px">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -122,12 +122,11 @@
               <a href="{% url 'shows' %}" class="nav-link">Shows</a>
               <a href="{% url 'indian_idel' %}" class="nav-link">Indian_idol</a>
               <a href="{% url 'kid' %}" class="nav-link">Kids</a>
-              <a href="{% url 'registration' %}" class="nav-link">Register</a>
            
-              <a href="{% url 'login_form' %}" class="nav-link">Logout</a>
+              <a href="{% url 'user_logout' %}" class="nav-link">Logout</a>
               <a href="{% url 'admin:index' %}" class="nav-link">Admin</a>
               <a href="{% url 'subscribe' %}"><button class="btn btn-primary" class="btn">Subscription</button></a>
-       
+              <a href="{% url 'display_profile' %}" class="nav-link">Hello, {{user.username}}</a>
       </nav>
       <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel">
         <div class="carousel-indicators">
@@ -156,7 +155,7 @@
             <img src="https://image-resizer-cloud-api.akamaized.net/image/29324A8B-FCFB-4FAB-A2AD-9D361DE1B70B/0-3x1.jpg?width=2304" class="d-block w-100" alt="Wild Landscape"/ height="500px">
 
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h5>Third slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
@@ -171,7 +170,7 @@
             <img src="https://image-resizer-cloud-api.akamaized.net/image/9FFA19A6-057F-46DB-B392-8DB7CA713FF1/0-3x1.jpg?width=2223" class="d-block w-100" alt="Wild Landscape"/ height="500px">
 
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h5>First slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
@@ -184,49 +183,49 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <h1>New Release</h1>
+      <h1>Indian-Idols</h1>
       <div class="container-fluied">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/4A7A688C-967D-40FF-9E42-16C5D3572402/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'ind1' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/4A7A688C-967D-40FF-9E42-16C5D3572402/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/29324A8B-FCFB-4FAB-A2AD-9D361DE1B70B/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/29324A8B-FCFB-4FAB-A2AD-9D361DE1B70B/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/EC3EF506-7D2A-4E33-AFE3-3FB59393E0DB/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/EC3EF506-7D2A-4E33-AFE3-3FB59393E0DB/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/3A2CA53F-EB55-452E-ABB2-C672FA1AB904/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/3A2CA53F-EB55-452E-ABB2-C672FA1AB904/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/1CF9242D-C994-48BC-A094-01D0D2280B9C/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/1CF9242D-C994-48BC-A094-01D0D2280B9C/0-2x3.jpg?width=240" class="img"></a>
             </div>
         </div>
       </div>
-      <h1>Free Movies</h1>
+      <h1>Hits Movies</h1>
       <div class="container-fluied">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/58873AFE-D16F-4ADD-8EA7-658462587A83/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'movie1' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/58873AFE-D16F-4ADD-8EA7-658462587A83/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/7CB1CA41-7F2E-447C-AD62-A2968241FF09/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/7CB1CA41-7F2E-447C-AD62-A2968241FF09/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/C6D49DC4-C4D5-495B-86C5-AA6EC41CE315/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/C6D49DC4-C4D5-495B-86C5-AA6EC41CE315/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/FD0ED325-4244-4437-877B-73AB859A1238/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/FD0ED325-4244-4437-877B-73AB859A1238/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/C95494C7-1FEB-4697-AF56-267BAF635B3A/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/C95494C7-1FEB-4697-AF56-267BAF635B3A/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/D21B8851-4605-4FE8-896A-8F09CB4FA825/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/D21B8851-4605-4FE8-896A-8F09CB4FA825/0-2x3.jpg?width=240" class="img"></a>
             </div>
         </div>
       </div>
@@ -234,45 +233,45 @@
       <div class="container-fluied">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/56FEEDB4-250A-4718-B3BF-F04E204BEBE6/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'ind2' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/56FEEDB4-250A-4718-B3BF-F04E204BEBE6/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/29324A8B-FCFB-4FAB-A2AD-9D361DE1B70B/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/29324A8B-FCFB-4FAB-A2AD-9D361DE1B70B/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/C6173B91-AE67-4DF1-BB7D-E4C8FEAD143C/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/C6173B91-AE67-4DF1-BB7D-E4C8FEAD143C/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/1CF9242D-C994-48BC-A094-01D0D2280B9C/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/1CF9242D-C994-48BC-A094-01D0D2280B9C/0-2x3.jpg?width=240" class="img"></a>
             </div>
         </div>
       </div>
-      <h1>Indian idols</h1>
+      <h1>Reality Shows</h1>
       <div class="container-fluied">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/4A7A688C-967D-40FF-9E42-16C5D3572402/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'ind1' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/4A7A688C-967D-40FF-9E42-16C5D3572402/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/5EEE963C-D163-4FE1-81B4-3EE3EE6AC342/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/5EEE963C-D163-4FE1-81B4-3EE3EE6AC342/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/5705F945-8BEA-428A-BB82-9FB0098ACFDD/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/5705F945-8BEA-428A-BB82-9FB0098ACFDD/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/596DA7A7-76E1-40CD-809F-EA9D77E57213/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/596DA7A7-76E1-40CD-809F-EA9D77E57213/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/D124A560-9D2B-4677-BB8D-A32F9634390A/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/D124A560-9D2B-4677-BB8D-A32F9634390A/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/D21B8851-4605-4FE8-896A-8F09CB4FA825/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/D21B8851-4605-4FE8-896A-8F09CB4FA825/0-2x3.jpg?width=240" class="img"></a>
             </div>
         </div>
       </div>      
@@ -280,44 +279,44 @@
       <div class="container-fluied">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/933A26D7-314E-4FD8-83BC-17CCD074C265/0-9x16.jpg?width=336" class="img" width="250px">
+              <a href="{% url 'movie5' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/933A26D7-314E-4FD8-83BC-17CCD074C265/0-9x16.jpg?width=336" class="img" width="250px"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/56FEEDB4-250A-4718-B3BF-F04E204BEBE6/0-9x16.jpg?width=336" class="img" width="250px">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/56FEEDB4-250A-4718-B3BF-F04E204BEBE6/0-9x16.jpg?width=336" class="img" width="250px"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/C6173B91-AE67-4DF1-BB7D-E4C8FEAD143C/0-9x16.jpg?width=336" class="img" width="250px">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/C6173B91-AE67-4DF1-BB7D-E4C8FEAD143C/0-9x16.jpg?width=336" class="img" width="250px"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/B80406E2-685C-41C6-96C0-D6EC657308AE/0-9x16.jpg?width=336" class="img" width="250px">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/B80406E2-685C-41C6-96C0-D6EC657308AE/0-9x16.jpg?width=336" class="img" width="250px"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-9x16.jpg?width=336" class="img" width="250px">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/854159CB-2C65-4946-9C12-A43960A3496F/0-9x16.jpg?width=336" class="img" width="250px"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/647A1DB5-389C-4401-A31E-BAD252A93117/0-9x16.jpg?width=336" class="img" width="250px">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/647A1DB5-389C-4401-A31E-BAD252A93117/0-9x16.jpg?width=336" class="img" width="250px"></a>
             </div>
         </div>
-      </div>      <h1>Indain idol</h1>
+      </div>      <h1>Tv Shows</h1>
       <div class="container-fluied">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/4A7A688C-967D-40FF-9E42-16C5D3572402/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'ganesh' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/4A7A688C-967D-40FF-9E42-16C5D3572402/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/5EEE963C-D163-4FE1-81B4-3EE3EE6AC342/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/5EEE963C-D163-4FE1-81B4-3EE3EE6AC342/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/5705F945-8BEA-428A-BB82-9FB0098ACFDD/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/5705F945-8BEA-428A-BB82-9FB0098ACFDD/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/596DA7A7-76E1-40CD-809F-EA9D77E57213/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/596DA7A7-76E1-40CD-809F-EA9D77E57213/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/AE587FAA-F596-4750-8635-915F1D543E55/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/AE587FAA-F596-4750-8635-915F1D543E55/0-2x3.jpg?width=240" class="img"></a>
             </div>
             <div class="col-12 col-md-6 col-lg-3 col-xl-2">
-                <img src="https://image-resizer-cloud-api.akamaized.net/image/D21B8851-4605-4FE8-896A-8F09CB4FA825/0-2x3.jpg?width=240" class="img">
+              <a href="{% url 'subscribe' %}"><img src="https://image-resizer-cloud-api.akamaized.net/image/D21B8851-4605-4FE8-896A-8F09CB4FA825/0-2x3.jpg?width=240" class="img"></a>
             </div>
         </div>
       </div>
@@ -365,7 +364,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <img src="https://res.cloudinary.com/dbxe3v9mq/image/upload/v1685462330/5ec39ea2f4130d44176268c0_1589878434760-removebg-preview_vjm8wt.png" width="300px" height="300px">
+            <img src="https://blog.aha.video/wp-content/uploads/2021/07/aha_logo.png" width="100px" height="50px">
           </h6>
           <p>
             Here you can use rows and columns to organize your footer content. Lorem ipsum
