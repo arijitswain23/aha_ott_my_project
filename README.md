@@ -1,4 +1,4 @@
-# Project: AHA - An OTT Platform
+# AHA - An OTT Platform
 
 **Role: Full Stack Developer**
 
